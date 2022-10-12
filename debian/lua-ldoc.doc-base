@@ -1,0 +1,9 @@
+Document: lua-ldoc
+Title: LDoc documentation
+Author: Steve Donovan
+Abstract: This is the LDoc documentation
+Section: Help
+
+Format: HTML
+Index: /usr/share/doc/lua-ldoc/html/index.html
+Files: /usr/share/doc/lua-ldoc/html/*/*.html

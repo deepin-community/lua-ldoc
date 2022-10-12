@@ -1,0 +1,85 @@
+lua-ldoc (1.4.6-1) unstable; urgency=medium
+
+  * New upstream version: (Closes: #878667)
+    - drop upstreamed patches
+    - update manpage
+  * Wrap and sort debian/control
+  * Update debian/copyright
+  * Bump standards version (no changes neccessary)
+  * Add Lua5.3 support (Closes: #880073)
+
+ -- Julian Wollrath <jwollrath@web.de>  Mon, 06 Nov 2017 09:37:55 +0100
+
+lua-ldoc (1.4.3-5+nmu1) unstable; urgency=medium
+
+  * Non-maintainer Upload.
+  * Add in support for SOURCE_DATE_EPOCH to override any set or unset
+    date.  Patch originally by JojoBoulix <pagth@passoire.fr>.
+    (Closes: #820240)
+
+ -- Daniel Silverstone <dsilvers@digital-scurf.org>  Sat, 05 Nov 2016 11:12:35 +0000
+
+lua-ldoc (1.4.3-5) unstable; urgency=medium
+
+  * Fix header used by lua-any adding 5.1 (Closes: #802248) 
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun, 01 Nov 2015 10:14:43 +0100
+
+lua-ldoc (1.4.3-4) unstable; urgency=medium
+
+  *  Use lua-any to make it work with both 5.1 and 5.2
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 22 Aug 2015 17:52:12 +0200
+
+lua-ldoc (1.4.3-3) unstable; urgency=medium
+
+  * Pass -d to txt2man to make the build reproducible
+  * Patch: add support to date overriding via --date to help
+    reproducible builds
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Tue, 18 Aug 2015 11:06:49 +0200
+
+lua-ldoc (1.4.3-2) unstable; urgency=medium
+
+  * Patch: close missing bracket in template file 
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Mon, 17 Aug 2015 14:40:09 +0200
+
+lua-ldoc (1.4.3-1) unstable; urgency=medium
+
+  * New upstream version:
+    - Better C support and other features.
+    - Lots of fixes.
+  * Update debian/copyright.
+  * Bump standards version (no changes needed).
+  * Add patch to fix tests.
+  * Switch to Lua 5.2.
+
+ -- Julian Wollrath <jwollrath@web.de>  Sat, 04 Jul 2015 13:58:41 +0200
+
+lua-ldoc (1.4.2-1) unstable; urgency=medium
+
+  * New upstream version.
+    - Update manpage.
+  * Update debian/copyright with missing information. 
+  * Bump standards version (no changes needed).
+
+ -- Julian Wollrath <jwollrath@web.de>  Thu, 23 Jan 2014 13:02:49 +0100
+
+lua-ldoc (1.4.0-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Julian Wollrath <jwollrath@web.de>  Sat, 24 Aug 2013 18:40:11 -0400
+
+lua-ldoc (1.3.13-2) unstable; urgency=low
+
+  * Update debian/copyright.
+
+ -- Julian Wollrath <jwollrath@web.de>  Tue, 02 Jul 2013 12:21:05 +0200
+
+lua-ldoc (1.3.13-1) unstable; urgency=low
+
+  * Initial release. (Closes: #700489)
+
+ -- Julian Wollrath <jwollrath@web.de>  Wed, 29 May 2013 17:14:06 +0200

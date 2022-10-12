@@ -1,0 +1,30 @@
+Source: lua-ldoc
+Section: interpreters
+Priority: optional
+Maintainer: Julian Wollrath <jwollrath@web.de>
+Uploaders: Enrico Tassi <gareuselesinge@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-lua (>= 16),
+               lua-discount,
+               lua-filesystem,
+               lua-penlight,
+               txt2man
+Standards-Version: 3.9.8
+Vcs-Git: git://anonscm.debian.org/pkg-lua/lua-ldoc.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-lua/lua-ldoc.git
+Homepage: http://stevedonovan.github.com/ldoc/
+
+Package: lua-ldoc
+Architecture: all
+Depends: lua-any,
+         lua-filesystem,
+         lua-penlight,
+         lua5.1 | lua5.2 | lua5.3,
+         ${misc:Depends}
+Suggests: lua-discount, lua-markdown
+XB-Lua-Versions: ${lua:Versions}
+Description: LuaDoc-compatible documentation generation system
+ LDoc is a LuaDoc-compatible documentation generation system for Lua source
+ code. It parses the declaration and documentation comments in a set of Lua
+ source files and produces a set of XHTML pages describing the commented
+ declarations and functions.

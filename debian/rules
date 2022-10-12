@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=lua --with lua --parallel
+
+override_dh_auto_install:
+	dh_auto_install
+	mkdir -p debian/tmp/usr/bin
+	cp ldoc.lua debian/tmp/usr/bin/ldoc
+	chmod a+x debian/tmp/usr/bin/ldoc
+	cd doc && lua5.1 ../ldoc.lua . && cd ..
+	mv out/ html
+
+override_dh_installman:
+	txt2man -d "`dpkg-parsechangelog -S date`"\
+	       	-v "" -r "ldoc" -t "ldoc 1" debian/ldoc.1.txt > debian/ldoc.1
+	dh_installman
+
+override_dh_auto_clean:
+	rm -rf tests/doc tests/*/doc html debian/ldoc.1
+	dh_auto_clean
